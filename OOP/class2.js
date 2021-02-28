@@ -1,3 +1,14 @@
-let a = 18;
+class User {
+  set name(name) {
+    this._name = name.trim().toLowerCase();
+  }
 
-console.log(a.prototype);
+  get name() {
+      return this._name;
+  }
+}
+
+const student = new User();
+student.name = '  VlAdImIr';
+
+console.log(student);
