@@ -70,7 +70,7 @@ function calc(strArr){
         break; 
         case '/': a = strArr[0] / strArr[2];
         break;
-        case '+': a = strArr[0] + strArr[2];
+        case '+': a = parseInt(strArr[0]) + parseInt(strArr[2]);
         break;  
     }
     return a;
